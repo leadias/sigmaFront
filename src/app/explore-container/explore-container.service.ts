@@ -1,9 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { departamentos } from './explore-container.model';
 import { map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
 
 
 
@@ -18,6 +16,13 @@ export class ExploreContainerService {
 
   get(){
     return this.http.get(`${environment.api}departamentos`)
+  }
+  createUser(user: any) {
+    const url_api = environment.api+"partipante/guardar";
+    return this.http.post(
+        url_api,user
+      )
+      .pipe(map(data => data));
   }
 
   city(){

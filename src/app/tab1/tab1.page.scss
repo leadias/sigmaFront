@@ -1,12 +1,15 @@
 .container{
-    position: relative;
+    position: absolute;
     display: flex;
     transition: all 0.3s ease 0s;
-    background-color: rgb(202, 194, 194);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     border-radius: 8px;
     margin: 0px;
     padding: 25px 25px 9px;
+    top: 65%;
+    text-align: center;
+    margin-left: 10%;
 }
 
 .faat{
@@ -24,6 +27,7 @@
     -webkit-box-pack: center;
     justify-content: center;
     padding: 35px 0px calc(88px);
+    height: 100%;
 }
 
 .hTaiGO .appIcon > div img {
