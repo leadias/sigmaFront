@@ -1,4 +1,65 @@
-<div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div  id="container">
+  <div  style="margin-left: 60px;" class="list">
+    <br>
+    <h1>Registro de participante</h1>
+    <br>
+    <hr style="background-color: #3c53d4;margin-left: -8%;">
+    <div style="display: inline-flex;" >
+      <label style="display: inline-flex;" class="item item-input"> Participante
+        <input style="margin-left: 70px;"class="form-control" type="text" >
+      </label>
+      <label style="margin-left: 20px;" class="item item-input">
+        <input class="form-control" type="text" >
+      </label>
+    </div>
+  </div>
+ <br>
+
+  <div style="margin-left: 60px;">
+    <label style="display:inline-flex;" class="item item-input"> Departamento
+      <select style="margin-left: 55px;width:465px;" class="form-control" name="" id="">
+        <option>Please Select </option>
+        <option *ngFor="let department of departamentos">{{department}}</option>
+      </select>
+    </label>
+  </div>
+ <br>
+
+  <div style="margin-left: 60px;">
+    <label style="display:inline-flex;" class="item item-input"> Ciudad
+      <select style="margin-left: 105px;width:465px;" class="form-control" name="" id="">
+        <option>Please Select </option>
+         <option *ngFor="let ciudad of ciudades" >{{ciudad}}</option>
+      </select>
+    </label>
+  </div>
+<br>
+<div style="margin-left: 60px;">
+  <label style="display:inline-flex;"  class="item item-input"> Email
+    <input style="margin-left: 115px;width:465px;" class="form-control" type="text" >
+  </label>
+</div>
+  <br>
+  <div style="margin-left: 60px;">
+    <label style="display:inline-flex;" class="item item-input"> Telefono
+      <input style="margin-left: 100px;width:465px;" class="form-control" type="tel" placeholder="(000) 000-0000" >
+    </label>
+  </div>
+<br>
+
+  <div style="margin-left: 60px;">
+    <label style="display:inline-flex;" class="item item-input"> Comentarios
+      <textarea class="form-control" style="margin-left: 70px;width:465px;" ></textarea>
+    </label>
+  </div>
+  <hr style="background-color: #1c35c4;">
+  <div style="margin-left: 32%;">
+    <button style="font-size: 16px;font-family: Inter, sans-serif;border-color: #c3cad8;
+    background-color: #fff;width: auto;min-width: 54px;margin-right: 10%;">Save</button>
+    <button type="button" class="btn btn-warning" style="font-size: 16px;font-family: Inter, sans-serif;min-width: 100px;color: #fff;
+    text-shadow: 0 -1px 0 #770900;
+    border: 3px solid #911208;
+    box-shadow: inset 0 1px 1px 0 #ff9a50, 0 0 0 3px #c8381f;
+    background: linear-gradient(0deg,#ef4c26 0,#dc4116 50%,#d02e17 51%,#b21109);width: 24%;">Guardar</button>
+  </div>
 </div>

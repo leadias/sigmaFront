@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ExploreContainerService } from './explore-container.service';
 
 @Component({
   selector: 'app-explore-container',
@@ -7,9 +8,26 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ExploreContainerComponent implements OnInit {
   @Input() name: string;
+  departamentos:any;
+  ciudades:any;
 
-  constructor() { }
+  constructor(private service : ExploreContainerService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.getDepartamentos();
+    this.getCiudades();
+  }
+
+  getDepartamentos(){
+    this.service.get()
+    .subscribe(name => { this.departamentos = name
+  });
+ }
+
+ getCiudades(){
+  this.service.city()
+  .subscribe(name => { this.ciudades = name
+});
+}
 
 }

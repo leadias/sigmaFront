@@ -1,0 +1,61 @@
+.container{
+    position: relative;
+    display: flex;
+    transition: all 0.3s ease 0s;
+    background-color: rgb(202, 194, 194);
+    width: 100%;
+    border-radius: 8px;
+    margin: 0px;
+    padding: 25px 25px 9px;
+}
+
+.faat{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: none;
+    min-height: 133px;
+    transition: all 0.3s ease 0s;
+    flex-direction: column;
+    background-color: rgb(223, 223, 255);
+    z-index: unset;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 35px 0px calc(88px);
+}
+
+.hTaiGO .appIcon > div img {
+    width: 39px;
+    height: 39px;
+}
+
+.forms{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    background-color: transparent;
+    width: 100%;
+    color: inherit;
+}
+
+.icon{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    flex-direction: row;
+    margin: 16px;
+}

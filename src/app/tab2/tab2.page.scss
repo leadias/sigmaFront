@@ -1,0 +1,32 @@
+.faat{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: none;
+    min-height: 133px;
+    transition: all 0.3s ease 0s;
+    flex-direction: column;
+    background-color: #ecedf3;
+    z-index: unset;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 675px 0px calc(88px);
+}
+
+.logo{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: none;
+    min-height: 133px;
+    transition: all 0.3s ease 0s;
+    flex-direction: column;
+    background-color: #ecedf3;
+    z-index: unset;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
